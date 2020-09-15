@@ -1,2 +1,2 @@
 # spring-webflux
-Project with Spring WebFlux and RxJava
+Project with Spring WebFlux, Reactor and RxJava2
