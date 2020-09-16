@@ -2,7 +2,7 @@ package Person;
 
 import lombok.*;
 
-@Getter @Setter @NoArgsConstructor @AllArgsConstructor @ToString
+@Getter @Setter @NoArgsConstructor @AllArgsConstructor @ToString @Builder
 public class Person {
 
     private Integer id;
