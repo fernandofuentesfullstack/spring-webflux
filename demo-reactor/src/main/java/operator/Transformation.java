@@ -11,7 +11,7 @@ import java.util.List;
 
 public class Transformation {
 
-    private static final Logger log = LoggerFactory.getLogger(Create.class);
+    private static final Logger log = LoggerFactory.getLogger(Transformation.class);
 
     public void map() {
         List<Person> personList = new ArrayList<>();

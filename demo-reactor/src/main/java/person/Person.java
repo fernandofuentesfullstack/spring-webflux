@@ -2,7 +2,7 @@ package person;
 
 import lombok.*;
 
-@Getter @Setter @NoArgsConstructor @AllArgsConstructor @ToString @Builder
+@Getter @Setter @NoArgsConstructor @AllArgsConstructor @ToString @Builder @EqualsAndHashCode
 public class Person {
 
     private Integer id;

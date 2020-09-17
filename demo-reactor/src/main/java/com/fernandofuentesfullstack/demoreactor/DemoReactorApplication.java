@@ -1,6 +1,7 @@
 package com.fernandofuentesfullstack.demoreactor;
 
 import operator.Create;
+import operator.Filter;
 import operator.Transformation;
 import person.Person;
 import io.reactivex.Observable;
@@ -53,12 +54,25 @@ public class DemoReactorApplication implements CommandLineRunner {
 		// Create app = new Create();
 		// app.range();
 		// app.repeat();
-		Transformation app = new Transformation();
-		System.out.println("Map");
-		app.map();
-		System.out.println("FlatMap");
-		app.flatMap();
-		System.out.println("GroupBy");
-		app.groupBy();
+		// Transformation app = new Transformation();
+		// System.out.println("Map");
+		// app.map();
+		// System.out.println("FlatMap");
+		// app.flatMap();
+		// System.out.println("GroupBy");
+		// app.groupBy();
+		Filter app = new Filter();
+		System.out.println("Filter");
+		app.filter();
+		System.out.println("Distinct");
+		app.distinct();
+		System.out.println("Take");
+		app.take();
+		System.out.println("TakeLast");
+		app.takeLast();
+		System.out.println("Skip");
+		app.skip();
+		System.out.println("SkipLast");
+		app.skipLast();
 	}
 }
