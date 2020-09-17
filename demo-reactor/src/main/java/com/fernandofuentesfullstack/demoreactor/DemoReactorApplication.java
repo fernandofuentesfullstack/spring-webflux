@@ -1,6 +1,7 @@
 package com.fernandofuentesfullstack.demoreactor;
 
-import Person.Person;
+import operator.Create;
+import person.Person;
 import io.reactivex.Observable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -46,6 +47,9 @@ public class DemoReactorApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		// reactor();
 		// rxjava2();
-		fluxToMono();
+		// fluxToMono();
+		Create app = new Create();
+		// app.range();
+		app.repeat();
 	}
 }
