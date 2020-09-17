@@ -1,6 +1,7 @@
 package com.fernandofuentesfullstack.demoreactor;
 
 import operator.Create;
+import operator.Transformation;
 import person.Person;
 import io.reactivex.Observable;
 import org.slf4j.Logger;
@@ -11,6 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+import javax.management.PersistentMBean;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -48,8 +50,15 @@ public class DemoReactorApplication implements CommandLineRunner {
 		// reactor();
 		// rxjava2();
 		// fluxToMono();
-		Create app = new Create();
+		// Create app = new Create();
 		// app.range();
-		app.repeat();
+		// app.repeat();
+		Transformation app = new Transformation();
+		System.out.println("Map");
+		app.map();
+		System.out.println("FlatMap");
+		app.flatMap();
+		System.out.println("GroupBy");
+		app.groupBy();
 	}
 }
