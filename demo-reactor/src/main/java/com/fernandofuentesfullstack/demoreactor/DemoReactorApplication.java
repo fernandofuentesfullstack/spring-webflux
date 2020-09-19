@@ -1,10 +1,7 @@
 package com.fernandofuentesfullstack.demoreactor;
 
-import operator.Combination;
-import operator.Create;
+import operator.*;
 import operator.Error;
-import operator.Filter;
-import operator.Transformation;
 import person.Person;
 import io.reactivex.Observable;
 import org.slf4j.Logger;
@@ -88,14 +85,25 @@ public class DemoReactorApplication implements CommandLineRunner {
 		// System.out.println("ZipWith");
 		// app.zipWith();
 
-		Error app = new Error();
+		// Error app = new Error();
 		// System.out.println("Retry");
 		// app.retry();
-		System.out.println("OnErrorReturn");
-		app.errorReturn();
-		System.out.println("OnErrorResume");
-		app.errorResume();
-		System.out.println("OnErrorMap");
-		app.errorMap();
+		// System.out.println("OnErrorReturn");
+		// app.errorReturn();
+		// System.out.println("OnErrorResume");
+		// app.errorResume();
+		// System.out.println("OnErrorMap");
+		// app.errorMap();
+
+		Conditional app = new Conditional();
+		System.out.println("DefaultIfEmpty");
+		app.defaultIfEmpty();
+		System.out.println("TakeUntil");
+		app.takeUntil();
+		System.out.println("Timeout");
+		app.timeout();
+
+
+
 	}
 }
