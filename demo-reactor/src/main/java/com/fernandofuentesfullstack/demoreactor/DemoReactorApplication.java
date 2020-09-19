@@ -95,15 +95,25 @@ public class DemoReactorApplication implements CommandLineRunner {
 		// System.out.println("OnErrorMap");
 		// app.errorMap();
 
-		Conditional app = new Conditional();
-		System.out.println("DefaultIfEmpty");
-		app.defaultIfEmpty();
-		System.out.println("TakeUntil");
-		app.takeUntil();
-		System.out.println("Timeout");
-		app.timeout();
+		// Conditional app = new Conditional();
+		// System.out.println("DefaultIfEmpty");
+		// app.defaultIfEmpty();
+		// System.out.println("TakeUntil");
+		// app.takeUntil();
+		// System.out.println("Timeout");
+		// app.timeout();
 
-
+		Mathematical app = new Mathematical();
+		System.out.println("Average");
+		app.average();
+		System.out.println("Count");
+		app.count();
+		System.out.println("Min");
+		app.min();
+		System.out.println("Sum");
+		app.sum();
+		System.out.println("Summarizing");
+		app.summarizingInt();
 
 	}
 }
