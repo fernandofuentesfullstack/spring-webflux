@@ -2,6 +2,7 @@ package com.fernandofuentesfullstack.demoreactor;
 
 import operator.Combination;
 import operator.Create;
+import operator.Error;
 import operator.Filter;
 import operator.Transformation;
 import person.Person;
@@ -52,9 +53,11 @@ public class DemoReactorApplication implements CommandLineRunner {
 		// reactor();
 		// rxjava2();
 		// fluxToMono();
+
 		// Create app = new Create();
 		// app.range();
 		// app.repeat();
+
 		// Transformation app = new Transformation();
 		// System.out.println("Map");
 		// app.map();
@@ -62,6 +65,7 @@ public class DemoReactorApplication implements CommandLineRunner {
 		// app.flatMap();
 		// System.out.println("GroupBy");
 		// app.groupBy();
+
 		// Filter app = new Filter();
 		// System.out.println("Filter");
 		// app.filter();
@@ -75,12 +79,23 @@ public class DemoReactorApplication implements CommandLineRunner {
 		// app.skip();
 		// System.out.println("SkipLast");
 		// app.skipLast();
-		Combination app = new Combination();
-		System.out.println("Merge");
-		app.merge();
-		System.out.println("Zip");
-		app.zip();
-		System.out.println("ZipWith");
-		app.zipWith();
+
+		// Combination app = new Combination();
+		// System.out.println("Merge");
+		// app.merge();
+		// System.out.println("Zip");
+		// app.zip();
+		// System.out.println("ZipWith");
+		// app.zipWith();
+
+		Error app = new Error();
+		// System.out.println("Retry");
+		// app.retry();
+		System.out.println("OnErrorReturn");
+		app.errorReturn();
+		System.out.println("OnErrorResume");
+		app.errorResume();
+		System.out.println("OnErrorMap");
+		app.errorMap();
 	}
 }
