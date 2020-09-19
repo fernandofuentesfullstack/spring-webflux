@@ -1,5 +1,6 @@
 package com.fernandofuentesfullstack.demoreactor;
 
+import operator.Combination;
 import operator.Create;
 import operator.Filter;
 import operator.Transformation;
@@ -61,18 +62,25 @@ public class DemoReactorApplication implements CommandLineRunner {
 		// app.flatMap();
 		// System.out.println("GroupBy");
 		// app.groupBy();
-		Filter app = new Filter();
-		System.out.println("Filter");
-		app.filter();
-		System.out.println("Distinct");
-		app.distinct();
-		System.out.println("Take");
-		app.take();
-		System.out.println("TakeLast");
-		app.takeLast();
-		System.out.println("Skip");
-		app.skip();
-		System.out.println("SkipLast");
-		app.skipLast();
+		// Filter app = new Filter();
+		// System.out.println("Filter");
+		// app.filter();
+		// System.out.println("Distinct");
+		// app.distinct();
+		// System.out.println("Take");
+		// app.take();
+		// System.out.println("TakeLast");
+		// app.takeLast();
+		// System.out.println("Skip");
+		// app.skip();
+		// System.out.println("SkipLast");
+		// app.skipLast();
+		Combination app = new Combination();
+		System.out.println("Merge");
+		app.merge();
+		System.out.println("Zip");
+		app.zip();
+		System.out.println("ZipWith");
+		app.zipWith();
 	}
 }
